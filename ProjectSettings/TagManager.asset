@@ -10,6 +10,10 @@ TagManager:
   - alldoors
   - win
   - yaoshi
+  - stone
+  - square
+  - wall
+  - win2
   layers:
   - Default
   - TransparentFX
@@ -21,8 +25,8 @@ TagManager:
   - door
   - wall
   - all
-  - 
-  - 
+  - square
+  - "\u969C\u788D\u7269"
   - 
   - 
   - 

@@ -18,9 +18,9 @@ public class MonsterMove : MonoBehaviour
     public Vector3 enemypos;
     /// <summary>怪物是否开始追踪player </summary>
     private bool seePlayer = true;
-    /// <summary>间隔时间 </summary>
+    /// <summary>格子移动间隔时间 </summary>
     public float restTime = 1f;
-    /// <summary>间隔时间 </summary>
+    /// <summary>摧毁门的间隔时间 </summary>
     public float restTime2 = 3f;
     /// <summary>计时器 </summary>
     public float restTimer = 0;
@@ -28,14 +28,14 @@ public class MonsterMove : MonoBehaviour
     public float restTimer2 = 0;
     /// <summary>怪物初始延迟启动的时间 </summary>
     public float startMove_m = 3f;
-   // public Animator heart;
+  
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-      //  heart = GetComponent<Animator>();
+      
 
     }
 
@@ -51,28 +51,7 @@ public class MonsterMove : MonoBehaviour
         Invoke("MonsterrMove", startMove_m);//延迟调用怪物移动代码
 
 
-       /*
-        if (Vector3.Distance(transform.position, playerpos.position) < 3f)//当怪物和player距离变近
-        {
-            //ToDo...心跳动画变成急速settrigger
-            //远离的话再变回平缓
-            heart.SetTrigger("faster");
-            if (Vector3.Distance(transform.position, playerpos.position) < 0.1f)//当怪物和player相遇之后
-            {
-                //ToDo...被怪物追上 失败
-                //屏幕变黑，播放心跳死亡动画，并且重新开始这一关
-                //freelight.gameObject.SetActive(false);
-                //settrigger if 结束 loadscene
-
-                SceneManager.LoadScene(0);
-
-            }
-        }
-        else
-        {
-            heart.SetTrigger("slower");
-        }
-       */
+      
 
     }
     /// <summary>
@@ -94,6 +73,8 @@ public class MonsterMove : MonoBehaviour
             Vector2 currDir = playerpos.transform.position - transform.position; //敌人看向玩家的向量，该向量从怪物指向player
             Vector2 currDirX = new Vector2(currDir.x, 0);//向量的X轴方向
             Vector2 currDirY = new Vector2(0, currDir.y);//向量的Y轴方向
+
+          
 
             if (Mathf.Abs(currDir.x) >= Mathf.Abs(currDir.y))//当X轴距离大于Y轴距离，此处采用绝对值    1、X轴方向
             {
@@ -206,6 +187,8 @@ public class MonsterMove : MonoBehaviour
                     }
                 }
             }
+
+
 
             //Collider2D[] aa = Physics2D.OverlapCircleAll(transform.position, 1f);//检测一个圆内有几个碰撞体
             //
