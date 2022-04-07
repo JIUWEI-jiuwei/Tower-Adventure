@@ -59,7 +59,7 @@ public class MonsterMove : MonoBehaviour
     /// 思路：得到怪物位置vector3→开启判定→获取怪物到player的向量→获取分向量X和Y→
     /// X优先时，判定X有无碰撞体，若无，则x++，若有，则转向Y→若Y无，则y++，若Y也有，则原地待命→Y轴与X轴一样
     /// 
-    /// 此处将门和墙都设置在Layer 9，因此怪物无法实现开门操作，会同时被门和墙阻碍
+    /// 
     /// </summary>
     void MonsterrMove()
     {

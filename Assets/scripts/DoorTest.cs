@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// 将脚本挂在door上
-/// 实现功能：门的打开和关闭
+/// 实现功能：门的打开和关闭→颜色的透明度变化
 /// 函数：协程+OnTriggerStay2D
 /// 当前：禁用
 /// </summary>
