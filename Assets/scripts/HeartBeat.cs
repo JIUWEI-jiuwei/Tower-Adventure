@@ -30,7 +30,7 @@ public class HeartBeat : MonoBehaviour
         {
             //ToDo...心跳动画变成急速settrigger
             //远离的话再变回平缓
-            heart.SetTrigger("faster");
+            heart.SetBool("heartfast",true);
             if (Vector3.Distance(monster.transform.position, player.transform.position) < 1f)//当怪物和player相遇之后
             {
                 //ToDo...被怪物追上 失败
@@ -44,7 +44,7 @@ public class HeartBeat : MonoBehaviour
         }
         else
         {
-            heart.SetTrigger("slower");
+            heart.SetBool("heartfast", false);
         }
     }
 }
