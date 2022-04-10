@@ -15,7 +15,9 @@ public class HeartBeat : MonoBehaviour
     public GameObject monster;
     /// <summary>角色 </summary>
     public GameObject player;
-
+    public AudioSource die;
+    public AudioSource heartBeatFast;
+    public float heartBeatFaster;
 
     // Start is called before the first frame update
     void Start()
@@ -26,25 +28,30 @@ public class HeartBeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(monster.transform.position, player.transform.position) < 4f)//当怪物和player距离变近
+        
+        if (Vector3.Distance(monster.transform.position, player.transform.position) < heartBeatFaster)//当怪物和player距离变近
         {
-            //ToDo...心跳动画变成急速settrigger
+            //心跳动画变成急速settrigger
             //远离的话再变回平缓
-            heart.SetTrigger("faster");
-            if (Vector3.Distance(monster.transform.position, player.transform.position) < 1f)//当怪物和player相遇之后
+            heart.SetBool("heartfast",true);
+            
+            //heartBeatFast.Play();
+            if (Vector3.Distance(monster.transform.position, player.transform.position) < 0.1f)//当怪物和player相遇之后
             {
                 //ToDo...被怪物追上 失败
                 //屏幕变黑，播放心跳死亡动画，并且重新开始这一关
                 //freelight.gameObject.SetActive(false);
                 //settrigger if 结束 loadscene
-
+                die.Play();
                 SceneManager.LoadScene(0);
-
+              
             }
         }
         else
         {
-            heart.SetTrigger("slower");
+            heart.SetBool("heartfast", false);
+            
+           // heartBeatFast.Pause();
         }
     }
 }

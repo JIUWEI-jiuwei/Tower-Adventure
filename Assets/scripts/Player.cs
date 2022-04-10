@@ -38,6 +38,9 @@ public class Player : MonoBehaviour
     public bool isOk = false;
     /// <summary> 判断是否拿到钥匙 </summary>
     public bool isOk2 = false;
+    public AudioSource pickStone;
+    public AudioSource playerWalk;
+
 
     // Use this for initialization
     void Start()
@@ -68,20 +71,36 @@ public class Player : MonoBehaviour
         //休息时间充足之后
         float h = Input.GetAxisRaw("Horizontal");//只能返回1 -1 0
         float v = Input.GetAxisRaw("Vertical");
+        //水平的向左是-1，向右是1,静止返回值是0
+        //垂直的向下是-1，向上是1,静止返回值是0
         if (h > 0)
         {
             v = 0;
         }
 
-        if (h != 0 || v != 0)//按下任意方向的键，角色就往该方向移动，两个方向不可能同时移动
+        if (h > 0 || v != 0)//向右
+            //按下任意方向的键，角色就往该方向移动，两个方向不可能同时移动
         {
             targetPos += new Vector2(h * stepSize, v * stepSize);
             restTimer = 0;//将时间设置为0，实现格子移动的间隔感
-            stand.SetTrigger("walk");
+            //stand.SetTrigger("walkR");
+            stand.SetFloat("Rwalk", 1);
+            //AudioManager.instance.PlayerWalk();
+            playerWalk.Play();
+        }
+        else if(h < 0 || v != 0)//left
+        {
+            targetPos += new Vector2(h * stepSize, v * stepSize);
+            restTimer = 0;//将时间设置为0，实现格子移动的间隔感
+            //stand.SetTrigger("walkL");
+            stand.SetFloat("Lwalk", 1);
+            //AudioManager.instance.PlayerWalk();
+            playerWalk.Play();
         }
         else
         {
-            stand.SetTrigger("Fwalk");
+            stand.SetFloat("Rwalk", -1);
+            stand.SetFloat("Lwalk", -1);
         }
 
     }
@@ -100,7 +119,8 @@ public class Player : MonoBehaviour
                 Destroy(collision.gameObject);
                 StoneSpaceNum.stoneSpace--;
                 Debug.Log("-1");
-
+                //AudioManager.instance.Playpickstoneclip();
+                pickStone.Play();
             }
 
 

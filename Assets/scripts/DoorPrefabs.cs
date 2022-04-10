@@ -17,6 +17,8 @@ public class DoorPrefabs : MonoBehaviour
     private bool yes = false;
     /// <summary> 单例，未用到 </summary>
     public static DoorPrefabs instance;
+    public AudioSource openDoor;
+    public AudioSource closeDoor;
 
     private void Awake()
     {
@@ -44,6 +46,7 @@ public class DoorPrefabs : MonoBehaviour
                     //Invoke("IsClosed", 3f);
                     isOpen = false;
                     Debug.Log("关门");
+                    closeDoor.Play();
                 }
                 else if (isOpen == false)
                 {
@@ -52,6 +55,7 @@ public class DoorPrefabs : MonoBehaviour
                     //Invoke("IsOpen", 3f);
                     isOpen = true;
                     Debug.Log("开门");
+                    openDoor.Play();
                 }
             }
         }

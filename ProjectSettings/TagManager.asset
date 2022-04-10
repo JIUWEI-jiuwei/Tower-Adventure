@@ -27,7 +27,7 @@ TagManager:
   - all
   - square
   - "\u969C\u788D\u7269"
-  - 
+  - monster
   - 
   - 
   - 
@@ -56,4 +56,7 @@ TagManager:
     locked: 0
   - name: heart
     uniqueID: 4042282721
+    locked: 0
+  - name: monster
+    uniqueID: 62690755
     locked: 0
