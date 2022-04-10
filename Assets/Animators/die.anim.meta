@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animators/die.anim.meta
 guid: 3032d8a5b5e560841a60ad3fc93b8d63
+========
+guid: 35b2dd450c50c12409baf3b03f8be31e
+>>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644:Assets/Animators/walkL.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

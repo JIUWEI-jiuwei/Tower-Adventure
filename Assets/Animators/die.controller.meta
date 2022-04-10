@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animators/die.controller.meta
 guid: 250e8bba651a57447a3d11daca5f54c6
+========
+guid: 40fa8c47f6169bb4998b63c0c89a1a15
+>>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644:Assets/Animators/心脏跳动 急/heartbeat.controller.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000

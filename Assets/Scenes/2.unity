@@ -5620,6 +5620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13b8dea17fdb9f64ab8cbbde27b55fe1, type: 3}
+<<<<<<< HEAD
 --- !u!1001 &496983745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5744,6 +5745,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 544844219587432390, guid: 1be1f106f080a9240bff0bc5b95ae7d4, type: 3}
   m_PrefabInstance: {fileID: 511058139}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7844,7 +7847,10 @@ GameObject:
   - component: {fileID: 675763523}
   - component: {fileID: 675763522}
   - component: {fileID: 675763521}
+<<<<<<< HEAD
   - component: {fileID: 675763524}
+=======
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
   m_Layer: 0
   m_Name: heartbeat
   m_TagString: Untagged
@@ -7862,9 +7868,13 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 33.7, y: 80.6, z: -5777.0835}
   m_LocalScale: {x: 10, y: 10, z: 10}
+<<<<<<< HEAD
   m_Children:
   - {fileID: 172893672}
   - {fileID: 1213331659}
+=======
+  m_Children: []
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
   m_Father: {fileID: 1109457422}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7883,9 +7893,12 @@ MonoBehaviour:
   heart: {fileID: 675763523}
   monster: {fileID: 1640718939}
   player: {fileID: 1228838596}
+<<<<<<< HEAD
   die: {fileID: 1213331660}
   heartBeatFast: {fileID: 1640718945}
   heartBeatFaster: 5
+=======
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
 --- !u!212 &675763522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7956,6 +7969,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+<<<<<<< HEAD
 --- !u!82 &675763524
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8088,6 +8102,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
 --- !u!1001 &687358515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21163,10 +21179,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1985755866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.59, y: 4.54, z: 4.088372}
   m_LocalScale: {x: 1.4310937, y: 0.1055, z: 1}
+=======
+  m_GameObject: {fileID: 1996784875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.03, y: -6.07, z: 0}
+  m_LocalScale: {x: 0.64119315, y: 0.6836603, z: 1}
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
   m_Children: []
   m_Father: {fileID: 1975534477}
   m_RootOrder: 48
@@ -21778,7 +21801,11 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 12
+=======
+  m_RootOrder: 13
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2028436249
 PrefabInstance:

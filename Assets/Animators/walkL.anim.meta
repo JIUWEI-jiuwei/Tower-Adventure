@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animators/walkL.anim.meta
 guid: 35b2dd450c50c12409baf3b03f8be31e
+========
+guid: 44f9306fa88af7e4b9a91c7b5d617299
+>>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644:Assets/Animators/心脏跳动 急/fast.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

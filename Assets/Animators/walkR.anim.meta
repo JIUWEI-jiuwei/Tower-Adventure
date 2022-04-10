@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animators/walkR.anim.meta
 guid: 60c83da7748d36d4db1162253ac5ea20
+========
+guid: 0e1b3785aefd5fe4d82a637ad3aa672c
+>>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644:Assets/Animators/心脏跳动 急/slow.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

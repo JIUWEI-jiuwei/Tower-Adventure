@@ -8912,7 +8912,11 @@ GameObject:
   - component: {fileID: 1818525731}
   - component: {fileID: 1818525730}
   m_Layer: 0
+<<<<<<< HEAD
   m_Name: playerWalkAnim
+=======
+  m_Name: test
+>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

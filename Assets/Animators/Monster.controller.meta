@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animators/Monster.controller.meta
 guid: bada283ea02f88246a819f0e20c50122
+========
+guid: dc083ca3d60c5db4aa27702dde67a6a9
+>>>>>>>> dc0ed6609db0ccb93f60b3799fd2d933bb9ec644:Assets/Animators/test.controller.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
